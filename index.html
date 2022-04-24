@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Munde Cosmetics" content="Munde Cosmetics">
+    <title>Munde Cosmetics</title>
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./img/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>MUNDE</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/new.html">Nuevo!</a></li>
+                <li><a href="./pages/sombras.html">Sombras</a></li>
+                <li><a href="./pages/rostro.html">Rostro</a></li>
+                <li><a href="./pages/labiales.html">Labiales</a></li>
+                <li><a href="./pages/about_us.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Nuevos Productos-->
+    <section class="newProducts buttonWhite">
+        <div>
+            <h2>Nueva colección!</h2>
+            <p>NUEVOS TONOS DE BASES Y LABIALES</p>
+            <a href="./pages/new.html">VER MAS</a>
+        </div>
+    </section>
+
+
+    <!--Categorías Productos-->
+    <section class="products buttonBlack">
+        <h2>Productos</h2>
+        <div>
+            <article>
+                <img src="./img/sombras.png" alt="Ir a categoría de productos Sombras">
+                <p>Sombras</p>
+                <a href="./pages/sombras.html">VER</a>
+
+            </article>
+
+            <article>
+                <img src="./img/base.png" alt="Ir a categoría de productos Rostro">
+                <p>Rostro</p>
+                <a href="./pages/rostro.html">VER</a>
+            </article>
+
+            <article>
+                <img src="./img/labial.png" alt="Ir a categoría de productos Labiales">
+                <p>Labiales</p>
+                <a href="./pages/labiales.html">VER</a>
+            </article>
+        </div>
+
+    </section>
+
+    <!--Información MUNDE-->
+    <section class="about_us buttonWhite">
+        <h3>Sobre Nosotros!</h3>
+        <p>
+            Munde® es una empresa de maquillaje enfocada en estimular la confianza.
+        </p>
+        <p>
+            Enamorados de la diversidad nos complementamos con diversos productos para los distintos tipos y tonos de
+            piel.
+        </p>
+        <p>
+            Es una marca consciente del impacto que puede generar, con productos cruelty free y un packaging totalmente
+            compuesto por materiales reciclados.
+        </p>
+        <a href="./pages/about_us.html">Conócenos mejor</a>
+    </section>
+
+    <!--Contacto Form-->
+    <section class="contact buttonForm">
+        <h3>CONTACTANOS!</h3>
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" name="name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email">
+
+            <label for="date">Fecha de nacimineto</label>
+            <input type="date" name="date">
+
+            <label for="status">Estado Civil</label>
+            <select name="status">
+                <option value="1">Soltero(a)</option>
+                <option value="2">Casado(a)</option>
+                <option value="3">Prefiero no decirlo</option>
+            </select>
+
+            <div>
+                <input type="checkbox" name="checkNewsletter">
+                <label for="checkNewsletter" >Desea recibir el Newsletter?</label>
+            </div>
+
+            <div>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="CANCELAR">
+            </div>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <!--Información-->
+        <div class="info">
+            <ul>
+                <li><a href="./pages/about_us.html#info_us">Sobre Nosotros</a></li>
+            </ul>
+            <ul>
+                <li><a href="./pages/about_us.html#legal">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <!--Redes sociales-->
+        <div class="social">
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+
+        <!--Links-->
+        <div class="links_footer">
+            <ul>
+                <li><a href="./pages/sombras.html">Sombras</a></li>
+                <li><a href="./pages/rostro.html">Rostro</a></li>
+                <li><a href="./pages/labiales.html">Labiales</a></td>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
