@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,900&display=swap');
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&display=swap');
 
 /*Reset css*/
 * {
@@ -15,7 +15,7 @@ a {
 
 body {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 /*header*/
@@ -29,7 +29,7 @@ header {
 }
 
 header h1{
-    font-family: 'Rubik Mono One', sans-serif ; 
+    font-family: 'Permanent Marker', cursive;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-smooth: always;
@@ -38,6 +38,7 @@ header h1{
 /*nav*/
 nav {
     font-weight: bold;
+    font-size: 15px;
     height: 100%;
     margin: 10px;
 } 
@@ -59,14 +60,13 @@ nav a:hover {
 
 /*Nuevos productos*/
 .newProducts {
-    background-image: url(../img/makeup.jpg);
-    background-size:cover;
-    height: 80vh;
+    background-image: url(../img/color.jpg);
+    background-size: cover;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .newProducts p {
@@ -80,20 +80,22 @@ nav a:hover {
     color: white;
 }
 
+.newProducts a {
+    transition: transform 1s;
+}
+
 .newProducts a:hover {
     background-color:rgba(255, 255, 255, 0.959) ;
+    transform: scale(1.1);
 }
 
 .newProducts div {
-    background-image: url(../img/makeup_models.png);
-    background-size:cover;
     height: 100%;
     width: 60%;
     display: flex;
     align-items: center;
     justify-content:end;
     flex-direction: column;
-    box-shadow: 0px 5px 50px rgb(0, 0, 0);
 }
 
 /*Categorias productos*/
@@ -225,7 +227,7 @@ footer .social ul{
     font-weight: bold;
 }
 
-/*Productos*/
+/*Estilos Productos*/
 section.allProducts.buttonBlack {
     height: auto;
 }
@@ -245,7 +247,7 @@ section.allProducts.buttonBlack {
 
 /* Estilo new.html*/
 .titleNewCat {
-    background-color: rgb(232, 134, 110);
+    background-image: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
     height: 30vh;
     display: flex;
     align-items: end;
@@ -382,10 +384,7 @@ section.allProducts.buttonBlack {
         width:  200px;
         height: 200px;
     }
-}
 
-@media only screen and (max-width: 791px) {
-    
     /*Nuevos prodcutos*/
     .newProducts {
         height: 60vh;
@@ -394,22 +393,18 @@ section.allProducts.buttonBlack {
     .newProducts div {
         width: 100%;
     }
-
     /*Categorias productos*/
     .products div {
         display: flex;
         flex-direction: column;
     }
-
     .products article img {
         height: 65%;
         width: 60%;
     }
-
     .products h2 {
         margin: 25px;
     }
-
     .products p {
         margin: 6px;
     }
@@ -418,17 +413,15 @@ section.allProducts.buttonBlack {
         width: 100%;
         margin: 0;
     }
-
     .titleCat {
         height: 5vh;
     }
-
     .allProducts {
         height: 85vh;
     }
 }
 
-@media only screen and (max-width: 482px) {
+@media only screen and (max-width: 541px) {
     /*Productos*/
     .allProducts img {
         width:  150px;
@@ -442,10 +435,8 @@ section.allProducts.buttonBlack {
     .buttonBlack a {
         padding: 5px;
     }
-
-}
-
-@media only screen and (max-width: 541px) {
+    
+    /*nav*/
     nav ul{
         flex-direction: column;
     }
@@ -457,7 +448,6 @@ section.allProducts.buttonBlack {
 
 @media only screen and (max-width: 380px) {
     /*Productos*/
-
     .allProducts div{
         grid-template-columns: 1fr;
     }
