@@ -2,87 +2,177 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Munde Cosmetics" content="Munde Cosmetics">
-    <title>Munde Cosmetics</title>
-    <link rel="shortcut icon" href="../img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="../style/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Munde Cosmetics" content="Munde Cosmetics">
+  <title>Munde Cosmetics</title>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Estilos css-->
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Logo-->
+  <link rel="shortcut icon" href="../img/logo.png">
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
+  <!--Header + navbar-->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md  navbar-light">
+      <h1>MUNDE</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./new.html">NUEVO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sombras.html">SOMBRAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./rostro.html">ROSTRO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./labiales.html">LABIALES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about_us.html">NOSOTROS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--Información de MUNDE-->
+  <section class="about_text  container-fluid">
+    <h3>SOBRE NOSOTROS</h3 id="info_us">
+    <p>
+      Munde® es una empresa de maquillaje enfocada en estimular la confianza.
+      Enamorados de la diversidad nos complementamos con diversos productos para los distintos tipos y tonos de
+      piel.
+      Es una marca consciente del impacto que puede generar, con productos cruelty free y un packaging totalmente
+      compuesto por materiales reciclados.
+    </p>
+
+
+    <div id="demo" class="carousel slide carousel_img" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/oficina.jpg" alt="Los Angeles" width="1100" height="500">
+          <img src="../img/sombras_cara.jpg" alt="Chicago" width="1100" height="500">
+          <img src="../img/personas2.jpg" alt="Chicago" width="1100" height="500">
         </div>
-        <h1>MUNDE</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./new.html">NUEVO</a></li>
-                <li><a href="./sombras.html">SOMBRAS</a></li>
-                <li><a href="./rostro.html">ROSTRO</a></li>
-                <li><a href="./labiales.html">LABIALES</a></li>
-                <li><a href="./about_us.html">NOSOTROS</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--Titulo de categoria-->
-    <section class="titleCat">
-        <h3>NOSOTROS</h3>
-    </section>
-
-    <!--Información de MUNDE + Video-->
-    <section class="about_text">
-        <h3>SOBRE NOSOTROS</h3 id="info_us">
-        <p>
-            Munde® es una empresa de maquillaje enfocada en estimular la confianza.
-            Enamorados de la diversidad nos complementamos con diversos productos para los distintos tipos y tonos de
-            piel.
-            Es una marca consciente del impacto que puede generar, con productos cruelty free y un packaging totalmente
-            compuesto por materiales reciclados.
-        </p>
-    </section>
-
-    <section >
-        <iframe width="99%" height="600" src="../img/Cosmetics - 25850.mp4"></iframe>
-    </section>
-
-    <!--Footer-->
-    <footer class="footerBottom">
-        <!--Información-->
-        <div class="info">
-            <ul>
-                <li><a href="./about_us.html#info_us">Sobre Nosotros</a></li>
-            </ul>
-            <ul>
-                <li><a href="./about_us.html#legal">Términos y condiciones</a></li>
-            </ul>
+        <div class="carousel-item">
+          <img src="../img/personas1.jpg" alt="Los Angeles" width="1100" height="500">
+          <img src="../img/base_liquida.jpg" alt="Chicago" width="1100" height="500">
+          <img src="../img/personas3.jpg" alt="Chicago" width="1100" height="500">
         </div>
+      </div>
 
-        <!--Redes sociales-->
-        <div class="social">
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a target="_blank" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></li>
-            </ul>
-        </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
 
-        <!--Links-->
-        <div class="links_footer">
-            <ul>
-                <li><a href="./sombras.html">Sombras</a></li>
-                <li><a href="./rostro.html">Rostro</a></li>
-                <li><a href="./labiales.html">Labiales</a></td></li>
-            </ul>
-        </div>
-    </footer>
+
+  <section class="row container-fluid video_info" id="legal">
+    <iframe class="col-7" width="99%" height="600" src="../img/Cosmetics - 25850.mp4"></iframe>
+    <div class="col-5">
+      <h4>Identidad de la marca</h4>
+      <p>
+        El concepto de maquillaje hace mención al acto y el resultado de maquillarse o de maquillar: es decir, de apelar a
+        productos cosméticos para cambiar la apariencia o embellecer el rostro u otra parte del cuerpo. También se llama
+        maquillaje a la sustancia que se utiliza para tal fin.
+      </p>
+      <p>
+        El maquillaje es usado por el ser humano para ocultar imperfecciones o resaltar ciertos rasgos. Es habitual que se
+        aplique en los párpados, en los labios y en las mejillas, entre otros lugares.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-white">
+    <div class="container p-4 row">
+
+      <!--Informacion -->
+      <div class="col-lg-4 col-md-12">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./about_us.html#info_us">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="./about_us.html#legal">Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Redes sociales -->
+      <div class="col-lg-4 col-md-12">
+        <section class="mb-4">
+          <!-- Instagram -->
+          <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
+              class="fa-brands fa-instagram"></i></a>
+          <!-- Youtube -->
+          <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
+              class="fa-brands fa-youtube"></i></a>
+          <!-- TikTok -->
+          <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
+              class="fa-brands fa-tiktok"></i></a>
+        </section>
+      </div>
+
+      <!--Categorias-->
+      <div class="col-lg-4 col-md-12">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="./sombras.html">Sombras</a>
+          <li>
+            </td>
+          </li>
+          <li>
+            <a href="./rostro.html">Rostro</a>
+          </li>
+          <li>
+            <a href="./labiales.html">Labiales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

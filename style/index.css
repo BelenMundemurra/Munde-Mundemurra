@@ -18,48 +18,24 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 /*header*/
-header {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.menu {
-    display: none;
-}
-
 header h1{
     font-family: 'Permanent Marker', cursive;
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-smooth: always;
 }
 
 /*nav*/
-nav {
+.navbar {
     font-weight: bold;
-    font-size: 15px;
-    height: 100%;
-    margin: 10px;
+    flex-direction: column;
 } 
-
-nav ul{
-    margin: 5px auto;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    align-items: center;
-}
-
-nav a:hover {
-    color: #565b50;
-}
-
-/*Body*/ 
-
+    
 /*Nuevos productos*/
-.newProducts {
+.jumbotron {
     background-image: url(../img/color.jpg);
     background-size: cover;
     height: 90vh;
@@ -67,52 +43,32 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.newProducts p {
-    color: white;
-    font-size: 20px;
-    width: 30vh;
-}
-
-.newProducts h2 {
-    font-size: 50px;
-    color: white;
-}
-
-.newProducts a {
-    transition: transform 1s;
-}
-
-.newProducts a:hover {
-    background-color:rgba(255, 255, 255, 0.959) ;
-    transform: scale(1.1);
-}
-
-.newProducts div {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    align-items: center;
     justify-content:end;
-    flex-direction: column;
+    color: white;
+    border-radius: 0;
+}
+
+.jumbotron h2 {
+    font-size: 50px;
+}
+
+.jumbotron a {
+    transition: transform 1s;
+    text-decoration: none;
+}
+
+.jumbotron a:hover {
+    transform: scale(1.1);
 }
 
 /*Categorias productos*/
 .products div {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+    margin: 0;
 }
-
 .products article img {
-    height: 65%;
+    height: 70%;
     width: 100%;
-    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.37);
-}
-
-.products h2 {
-    margin-top: 5vh;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.267);
 }
 
 .products p {
@@ -121,20 +77,18 @@ nav a:hover {
 }
 
 .products article {
-    width: 20vw;
-    z-index: 0;
-    margin: 2vh;
-    transition: transform 0.5s;
+    margin: 20px;
+    transition: transform 1s;
 }
 
-.products article:hover {
+.products article a:hover {
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 /*About us*/
 .about_us {
     background-color: rgba(210, 226, 197, 0.555);
-    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,70 +100,45 @@ nav a:hover {
 }    
 
 /*Form contacto*/
-.contact {
-    height:55vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact form {   
-    text-align: start;
-    width: 20vw;    
-    height: 85%;
-    margin-top: 1%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,1fr);
-}
-
-.contact input[type="text"],input[type="date"],label,select {
-    height: 3vh;
-    width:100%; 
-}
-
-label,input[type="checkbox"]{
-    margin-top: 3%;
-}
-
-.contact input[type="text"],input[type="date"] {
-    border: 1px solid rgb(183, 183, 183);
-    border-radius: 5px;
-}
-
-.contact div {
-    text-align: center;
+.contact h3, form {
     margin: 4%;
+}
+
+.contact form {
+    text-align: left;
+}
+
+.contact form button {
+    justify-content: center;
+    width: 50%;
+    display: flex;
 }
 
 /*Footer*/
 footer {
-    width: 100%;
-    height: 8vh;
-    background-color: rgba(63, 63, 63, 0.212);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    background-color: rgb(25, 23, 23);
+    display: flex;
+    justify-content:center ;
 }
 
 footer i {
     font-size: 35px;
+    color: rgb(218, 217, 217);
 }
+
 
 footer li {
     list-style: none;
+
 }
 
-footer div {
-    width: 100%;
+footer li a {
+    color: rgb(218, 217, 217);
 }
 
-footer .social ul{
-    display: flex;
-    justify-content: space-around;
+footer li a:hover , i:hover{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
 }
 
 /*Estilos Product Page*/
@@ -222,57 +151,64 @@ footer .social ul{
 }
 
 .titleCat h3 {
-
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
 /*Estilos Productos*/
-section.allProducts.buttonBlack {
-    height: auto;
-}
-
-.allProducts div{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-content: center;
+.allProducts {
+    display: flex;
     justify-content: center;
+}
+.allProducts div {
+    width: 100vw;
+    margin-top: 35px;
 }
 
 .allProducts img {
-    width:  60%;
     height: 60%;
-    margin: 20px;
+    width: 90%;
 }
 
 /* Estilo new.html*/
 .titleNewCat {
     background-image: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
-    height: 30vh;
-    display: flex;
-    align-items: end;
-    justify-content:center;
 }
 
 .titleNewCat h3{
-    margin-bottom:50px;
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
+    padding: 20px;
 }
 
 /* Estilo about_us.html*/
-.about_text{
-    margin: 50px;
+.about_text {
+    padding: 50px;
+    height: 100%;
+    background-color: rgb(215, 195, 176);
 }
 
+.carousel_img img {
+    display: inline;
+    width: 500px;
+}
+
+.video_info {
+padding:    30px 50px;
+}
+
+
+.video_info div {
+    align-self: center;
+}
 /*Estilo botones*/
 /*Boton negro*/
 .buttonBlack a {
     display: inline-block;
     font-weight: bold;
     padding: 10px;
-    margin-bottom:30px ;
+    margin-bottom:100px ;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
@@ -280,7 +216,7 @@ section.allProducts.buttonBlack {
 }
 
 /*Boton blanco con border negro*/
-.buttonForm input[type='submit'],input[type='reset'] {
+.buttonForm {
     border-radius: 0;
     font-weight: bold;
     margin: 2%;
@@ -306,152 +242,11 @@ section.allProducts.buttonBlack {
     width: 20vh;
 }
 
-
-/*Medias queries*/
-@media only screen and (max-width: 1262px) and (min-width:948px){
-    nav ul{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        align-items: center;
+/*Menu hamburguesa*/
+@media only screen and (max-width:766px) {
+    .navbar {
+        flex-direction: row;
     }
 }
-
-@media only screen and (max-width: 948px){
-    /*header*/
-    header h1{
-        margin-top: 5px;
-    }
-    
-    /*nav*/
-    nav a {
-        margin: 10px;
-    }
-
-    /*Categorias productos*/
-    .products article  {
-        width: 85%;
-    }
-
-    /*About us*/
-    .about_us {
-        padding: 30px;
-    }
-
-    /*Form contacto*/
-    .contact form {   
-        width: 55vw;    
-    }
-
-    .contact input[type="text"],input[type="date"],select {
-        height: 4vh;
-        width:100%; 
-    }
-
-    label,input[type="checkbox"]{
-        margin-top: 1%;
-    }
-
-    /*Footer*/
-    footer {
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        font-size: 15px;
-    }
-
-    footer div li{
-        margin: 10px;
-    }
-
-    footer .social ul{
-        justify-content: center;
-    }
-
-    .allProducts {
-        height: 90vh;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /*Productos*/
-    .allProducts div{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .allProducts img {
-        width:  200px;
-        height: 200px;
-    }
-
-    /*Nuevos prodcutos*/
-    .newProducts {
-        height: 60vh;
-    }
-    
-    .newProducts div {
-        width: 100%;
-    }
-    /*Categorias productos*/
-    .products div {
-        display: flex;
-        flex-direction: column;
-    }
-    .products article img {
-        height: 65%;
-        width: 60%;
-    }
-    .products h2 {
-        margin: 25px;
-    }
-    .products p {
-        margin: 6px;
-    }
-    
-    .products article {
-        width: 100%;
-        margin: 0;
-    }
-    .titleCat {
-        height: 5vh;
-    }
-    .allProducts {
-        height: 85vh;
-    }
-}
-
-@media only screen and (max-width: 541px) {
-    /*Productos*/
-    .allProducts img {
-        width:  150px;
-        height: 150px;
-    }
-
-    .allProducts div{
-        font-size: 15px;
-    }
-
-    .buttonBlack a {
-        padding: 5px;
-    }
-    
-    /*nav*/
-    nav ul{
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 7px;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    /*Productos*/
-    .allProducts div{
-        grid-template-columns: 1fr;
-    }
-}
-
 
 
