@@ -144,13 +144,13 @@ footer li a:hover , i:hover{
 /*Estilos Product Page*/
 /*Titulo de categoría*/
 .titleCat {
-    background-image: url(../img/makeup.jpg);
-    background-size:cover;
-    height: 5vh;
     text-align: center;
 }
 
 .titleCat h3 {
+    padding: 20px;
+    background-image: url(../img/makeup.jpg);
+    background-size: cover;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
@@ -195,7 +195,11 @@ footer li a:hover , i:hover{
 }
 
 .video_info {
-padding:    30px 50px;
+padding: 30px 50px;
+}
+
+.video_info div {
+    padding-top: 20px;
 }
 
 
