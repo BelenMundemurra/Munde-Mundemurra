@@ -1,3 +1,235 @@
+@charset "UTF-8";
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&display=swap");
+/*Fuentes*/
+/*Colores*/
+/*index*/
+/*Nuevos productos - index*/
+/*Sobre nosotros - index*/
+/*Footer*/
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  text-align: center;
+  font-family: Red Hat Display, sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*header*/
+header h1 {
+  font-family: Permanent Marker, cursive;
+  color: rgb(0, 0, 0);
+}
+
+/*nav*/
+.navbar {
+  font-weight: bold;
+  flex-direction: column;
+}
+
+/*Nuevos productos*/
+.jumbotron {
+  background-image: url(../img/color.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  border-radius: 0;
+}
+.jumbotron h2 {
+  font-size: 50px;
+}
+.jumbotron a {
+  transition: transform 1s;
+  text-decoration: none;
+}
+.jumbotron a:hover {
+  transform: scale(1.1);
+}
+
+/*Categorias productos*/
+.products div {
+  margin: 0;
+}
+.products article img {
+  height: 70%;
+  width: 100%;
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.267);
+}
+.products p {
+  font-size: 20px;
+  margin: 20px;
+}
+.products article {
+  margin: 20px;
+  transition: transform 1s;
+}
+.products article a:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/*About us*/
+.about_us {
+  background-color: rgba(210, 226, 197, 0.555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about_us h3 {
+  margin: 3vh;
+}
+
+/*Form contacto*/
+.contact h3, .contact form {
+  margin: 4%;
+}
+.contact form {
+  text-align: left;
+}
+.contact form button {
+  justify-content: center;
+  width: 50%;
+  display: flex;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(25, 23, 23);
+  display: flex;
+  justify-content: center;
+}
+footer i {
+  font-size: 35px;
+  color: rgb(218, 217, 217);
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  color: rgb(218, 217, 217);
+}
+footer li a:hover, footer li i:hover {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+}
+
+/*Estilo botones*/
+/*Boton negro*/
+.buttonBlack a {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 100px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+  width: 15vh;
+}
+
+/*Boton blanco con border negro*/
+.buttonForm {
+  border-radius: 0;
+  font-weight: bold;
+  margin: 2%;
+  padding: 8px;
+  width: 15vh;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(184, 184, 184);
+  color: rgb(62, 62, 62);
+  cursor: pointer;
+}
+
+/*Boton blanco transparente*/
+.buttonWhite a {
+  border: none;
+  font-weight: bold;
+  padding: 1.5vh;
+  margin: 2vh;
+  color: rgb(31, 31, 31);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+  margin-bottom: 50px;
+  width: 20vh;
+}
+
+/*Menu hamburguesa*/
+@media only screen and (max-width: 766px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+/*Estilos Product Page*/
+/*Categorías*/
+/*Titulo de categoría*/
+.titleCat {
+  text-align: center;
+}
+.titleCat h3 {
+  padding: 20px;
+  background-image: url(../img/makeup.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/*Estilos Productos*/
+.allProducts {
+  display: flex;
+  justify-content: center;
+}
+.allProducts div {
+  width: 100vw;
+  margin-top: 35px;
+}
+.allProducts img {
+  height: 60%;
+  width: 90%;
+}
+
+/*Estilo new.html*/
+.titleNewCat {
+  background-image: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
+}
+.titleNewCat h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+}
+
+/* Estilo about_us.html*/
+.about_text {
+  padding: 50px;
+  height: 100%;
+  background-color: rgb(215, 195, 176);
+}
+
+.carousel_img img {
+  display: inline;
+  width: 500px;
+}
+
+.video_info {
+  padding: 30px 50px;
+}
+.video_info div {
+  padding-top: 20px;
+  align-self: center;
+}
 
 /*# sourceMappingURL=index.css.map */

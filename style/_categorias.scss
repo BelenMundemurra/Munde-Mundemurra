@@ -1,0 +1,66 @@
+/*Estilos Product Page*/
+/*Categorías*/
+$h3-color: rgb(255, 255, 255);
+$new-background: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
+
+/*Titulo de categoría*/
+.titleCat {
+    text-align: center;
+
+    h3 {
+        padding: 20px;
+        background-image: url(../img/makeup.jpg);
+        background-size: cover;
+        color: $h3-color;
+        font-weight: bold;
+    }
+}
+
+/*Estilos Productos*/
+.allProducts {
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 100vw;
+        margin-top: 35px;
+    }
+
+    img {
+        height: 60%;
+        width: 90%;
+    }
+}
+
+/*Estilo new.html*/
+.titleNewCat {
+    background-image: $new-background;
+
+    h3{
+        color: $h3-color;
+        font-weight: bold;
+        font-size: 40px;
+        padding: 20px;
+    }
+}
+
+/* Estilo about_us.html*/
+.about_text {
+    padding: 50px;
+    height: 100%;
+    background-color: rgb(215, 195, 176);
+}
+
+.carousel_img img {
+    display: inline;
+    width: 500px;
+}
+
+.video_info {
+    padding: 30px 50px;
+
+    div {
+        padding-top: 20px;
+        align-self: center;
+    }
+}

@@ -1,0 +1,210 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&display=swap');
+
+/*Fuentes*/
+$fuente-body: Red Hat Display, sans-serif;
+$fuente-h1: Permanent Marker, cursive ;
+
+/*Colores*/
+/*index*/
+$color-h1: rgb(0, 0, 0);
+
+/*Nuevos productos - index*/
+$jumbotron-color: white;
+
+/*Sobre nosotros - index*/
+$about-background: rgba(210, 226, 197, 0.555);
+
+/*Footer*/
+$footer-background: rgb(25, 23, 23);
+$footer-color: rgb(218, 217, 217);
+$footer-color-hover: rgb(255, 254, 254);
+
+/*Reset css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: $fuente-body;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/*header*/
+header h1{
+    font-family: $fuente-h1;
+    color: $color-h1;
+}
+
+/*nav*/
+.navbar {
+    font-weight: bold;
+    flex-direction: column;
+} 
+    
+/*Nuevos productos*/
+.jumbotron {
+    background-image: url(../img/color.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content:end;
+    color: $jumbotron-color;
+    border-radius: 0;
+    
+    h2 {
+        font-size: 50px;
+    }
+
+    a {
+        transition: transform 1s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*Categorias productos*/
+.products {
+    div {
+        margin: 0;
+    }
+
+    article img {
+        height: 70%;
+        width: 100%;
+        box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.267);
+    }
+
+    p {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    article {
+        margin: 20px;
+        transition: transform 1s;
+    }
+
+    article a:hover {
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+}
+
+/*About us*/
+.about_us {
+    background-color: $about-background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+        margin: 3vh;
+    } 
+
+}
+
+/*Form contacto*/
+.contact {
+    h3, form {
+        margin: 4%;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    form button {
+        justify-content: center;
+        width: 50%;
+        display: flex;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: $footer-background;
+    display: flex;
+    justify-content:center ;
+
+    i {
+        font-size: 35px;
+        color: $footer-color;
+    }
+
+    li {
+        list-style: none;
+        
+        a {
+            color: $footer-color;
+        }
+
+        a:hover , i:hover{
+            color: $footer-color-hover;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+/*Estilo botones*/
+/*Boton negro*/
+.buttonBlack a {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom:100px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+    width: 15vh;
+}
+
+/*Boton blanco con border negro*/
+.buttonForm {
+    border-radius: 0;
+    font-weight: bold;
+    margin: 2%;
+    padding: 8px;
+    width: 15vh ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(184, 184, 184);
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+}
+
+/*Boton blanco transparente*/
+.buttonWhite a {
+    border: none;
+    font-weight: bold;
+    padding: 1.5vh;
+    margin: 2vh;
+    color: rgb(31, 31, 31);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+    margin-bottom: 50px;
+    width: 20vh;
+}
+
+/*Menu hamburguesa*/
+@media only screen and (max-width:766px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+
+@import "_categorias.scss"
