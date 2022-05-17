@@ -1,7 +1,7 @@
 /*Estilos Product Page*/
 /*Categorías*/
 $h3-color: rgb(255, 255, 255);
-$new-background: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
+$h3-color_new: rgb(0, 0, 0);
 
 /*Titulo de categoría*/
 .titleCat {
@@ -34,10 +34,12 @@ $new-background: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, 
 
 /*Estilo new.html*/
 .titleNewCat {
-    background-image: $new-background;
+    background-image: url(../img/a.jpg);
+    background-size: cover;
+    box-shadow: 1px 13px 14px -8px rgba(0, 0, 0, 0.294);
 
     h3{
-        color: $h3-color;
+        color: $h3-color_new;
         font-weight: bold;
         font-size: 40px;
         padding: 20px;
@@ -45,22 +47,76 @@ $new-background: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, 
 }
 
 /* Estilo about_us.html*/
+.video_i {
+    background-color: black;
+
+    iframe {
+        border: none;
+    }
+}
+
 .about_text {
     padding: 50px;
     height: 100%;
-    background-color: rgb(215, 195, 176);
+    background-color: rgba(208, 202, 197, 0.537);
+
+    p {
+        display: block;
+    }
+
+    h3 {
+        font-family: $fuente-title;
+    }
 }
 
 .carousel_img img {
-    display: inline;
     width: 500px;
 }
 
-.video_info {
-    padding: 30px 50px;
-
+.marca_info {
     div {
         padding-top: 20px;
         align-self: center;
+        h3 {
+            font-family: $fuente-title;
+        }
     }
 }
+
+/* Estilo product_detail.html*/
+.product_detail {
+    height: 70vh;
+    text-align: left;
+    display: flex;
+    padding: 50px;
+
+    img {
+        width: 50%;
+        height: 70%;
+    }
+
+    div {
+        padding-left: 40px;
+        font-size: 20px;
+        h4 {
+            font-family: $fuente-title; 
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .product_detail {
+        flex-direction: column;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 70%;
+        }
+
+        div {
+            padding: 20px;
+            font-size: 19px;
+        }
+    }
+}
+

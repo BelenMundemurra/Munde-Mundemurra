@@ -2,6 +2,7 @@
 /*Imports*/
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&family=Red+Hat+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 /*Fuentes*/
 /*Colores*/
 /*index*/
@@ -17,6 +18,7 @@
 body {
   text-align: center;
   font-family: Red Hat Display, sans-serif;
+  background-color: rgba(231, 223, 213, 0.188);
 }
 
 .container-fluid {
@@ -24,6 +26,9 @@ body {
 }
 
 /*header*/
+header {
+  background-color: white;
+}
 header h1 {
   font-family: Permanent Marker, cursive;
   color: rgb(0, 0, 0);
@@ -49,7 +54,9 @@ header h1 {
   border-radius: 0;
 }
 .jumbotron h2 {
-  font-size: 50px;
+  font-size: 100px;
+  padding: 10px;
+  font-family: Staatliches, cursive;
 }
 .jumbotron a {
   transition: transform 1s;
@@ -68,8 +75,12 @@ header h1 {
   width: 100%;
   box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.267);
 }
+.products h2 {
+  font-family: Staatliches, cursive;
+  font-size: 40px;
+}
 .products p {
-  font-size: 20px;
+  font-size: 25px;
   margin: 20px;
 }
 .products article {
@@ -83,24 +94,39 @@ header h1 {
 
 /*About us*/
 .about_us {
-  background-color: rgba(210, 226, 197, 0.555);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 3px solid;
+  width: 97%;
 }
 .about_us h3 {
   margin: 3vh;
+  font-family: Staatliches, cursive;
 }
 
 /*Form contacto*/
+.contact {
+  padding: 7px;
+}
+.contact h3 {
+  font-family: Staatliches, cursive;
+}
 .contact h3, .contact form {
-  margin: 4%;
+  margin: 2%;
 }
 .contact form {
   text-align: left;
+  font-weight: bold;
 }
-.contact form button {
+.contact form input, .contact form select {
+  border-radius: 0.5;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid black;
+}
+.contact button {
   justify-content: center;
   width: 50%;
   display: flex;
@@ -108,12 +134,14 @@ header h1 {
 
 /*Footer*/
 footer {
+  margin-top: 40px;
   background-color: rgb(25, 23, 23);
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 footer i {
-  font-size: 35px;
+  font-size: 40px;
   color: rgb(218, 217, 217);
 }
 footer li {
@@ -147,10 +175,11 @@ footer li a:hover, footer li i:hover {
   margin: 2%;
   padding: 8px;
   width: 15vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(7, 115, 111);
   color: rgb(0, 0, 0);
-  border: 1px solid rgb(184, 184, 184);
-  color: rgb(62, 62, 62);
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+  color: white;
   cursor: pointer;
 }
 
@@ -203,33 +232,81 @@ footer li a:hover, footer li i:hover {
 
 /*Estilo new.html*/
 .titleNewCat {
-  background-image: linear-gradient(to bottom, #830006, #9f302c, #b85250, #d07374, #e59599);
+  background-image: url(../img/a.jpg);
+  background-size: cover;
+  box-shadow: 1px 13px 14px -8px rgba(0, 0, 0, 0.294);
 }
 .titleNewCat h3 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
 }
 
 /* Estilo about_us.html*/
+.video_i {
+  background-color: black;
+}
+.video_i iframe {
+  border: none;
+}
+
 .about_text {
   padding: 50px;
   height: 100%;
-  background-color: rgb(215, 195, 176);
+  background-color: rgba(208, 202, 197, 0.537);
+}
+.about_text p {
+  display: block;
+}
+.about_text h3 {
+  font-family: Staatliches, cursive;
 }
 
 .carousel_img img {
-  display: inline;
   width: 500px;
 }
 
-.video_info {
-  padding: 30px 50px;
-}
-.video_info div {
+.marca_info div {
   padding-top: 20px;
   align-self: center;
+}
+.marca_info div h3 {
+  font-family: Staatliches, cursive;
+}
+
+/* Estilo product_detail.html*/
+.product_detail {
+  height: 70vh;
+  text-align: left;
+  display: flex;
+  padding: 50px;
+}
+.product_detail img {
+  width: 50%;
+  height: 70%;
+}
+.product_detail div {
+  padding-left: 40px;
+  font-size: 20px;
+}
+.product_detail div h4 {
+  font-family: Staatliches, cursive;
+}
+
+@media only screen and (max-width: 780px) {
+  .product_detail {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .product_detail img {
+    width: 100%;
+    height: 70%;
+  }
+  .product_detail div {
+    padding: 20px;
+    font-size: 19px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
