@@ -1,0 +1,235 @@
+/*Estilo index*/
+$color-h1: rgb(0, 0, 0);
+
+/*Nuevos productos - index*/
+$jumbotron-color: white;
+
+/*Sobre nosotros - index*/
+$about-background: rgb(255, 255, 255);
+
+/*Footer*/
+$footer-background: rgb(16, 15, 15);
+$footer-color: rgb(240, 234, 234);
+$footer-color-hover: rgb(255, 254, 254);
+
+/*Reset css*/
+* {
+    margin: 0;
+    padding: 0;
+}   
+
+body {
+    text-align: center;
+    font-family: $fuente-body;
+    background-color: rgba(231, 223, 213, 0.188);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/*header*/
+header {
+    background-color: white;
+
+    h1{
+        font-family: $fuente-h1;
+        color: $color-h1;
+    }
+}
+
+/*nav*/
+.nav-item {color: black;}
+
+.navbar {
+    font-weight: bold;
+    flex-direction: column;
+} 
+
+/*Nuevos productos*/
+.jumbotron {
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content:end;
+    color: $jumbotron-color;
+    border-radius: 0;
+    
+    h2 {
+        font-size: 8rem;
+        padding: 10px;
+        font-family: $fuente-title;
+    }
+
+    a {
+        transition: transform 1s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/*Categorias productos*/
+.products {
+    div {
+        margin: 0;
+    }
+
+    article img {
+        height: 70%;
+        width: 100%;
+        box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.267);
+    }
+
+    h2 {
+        font-family: $fuente-title;
+        font-size: 3rem;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+    article {
+        margin: 20px;
+        transition: transform 1s;
+    }
+
+    article a:hover {
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+}
+
+/*About us*/
+.about_us {
+    background-color: $about-background ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    border: 3px solid;
+    width: 97%;
+
+    h3 {
+        margin: 3vh;
+        font-family: $fuente-title;
+    } 
+}
+
+/*Form contacto*/
+.contact {
+    padding: 7px;
+
+    h3 {
+        font-family: $fuente-title;
+    }
+
+    h3, form {
+        margin: 2%;
+    }
+
+    form {
+        text-align: left;
+        font-weight: bold;
+        
+        input,select {
+            border-radius: 0.5;
+            background-color: rgba(255, 255, 255, 0);
+            border: 2px solid black;
+        }
+    }
+
+    button {
+        justify-content: center;
+        width: 50%;
+        display: flex;
+    }
+}
+
+/*Footer*/
+footer {
+    margin-top: 40px;
+    background-color: $footer-background;
+    display: flex;
+    justify-content: center;
+
+    i {
+        font-size: 2.5rem;
+        color: $footer-color;
+    }
+
+    li {
+        list-style: none;
+        
+        a {
+            color: $footer-color;
+        }
+
+        a:hover , i:hover{
+            color: $footer-color-hover;
+            text-decoration: none;
+        }
+    }  
+
+    .socialmedia {
+        display: inline-flex;
+    }
+}
+
+/*Estilo botones*/
+/*Boton negro*/
+.buttonBlack a{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+    width: 15vh;
+}
+
+/*Boton blanco con border negro*/
+.buttonForm {
+    border-radius: 0;
+    font-weight: bold;
+    margin: 2%;
+    padding: 8px;
+    width: 15vh;
+    background-color: rgb(7, 115, 111);
+    color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.428);
+    color: white;
+    cursor: pointer;
+}
+
+/*Boton blanco transparente*/
+.buttonWhite a {
+    border: none;
+    font-weight: bold;
+    padding: 1.5vh;
+    margin: 2vh;
+    color: rgb(31, 31, 31);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+    margin-bottom: 50px;
+    width: 20vh;
+}
+
+/*Menu hamburguesa*/
+@media only screen and (max-width:766px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+

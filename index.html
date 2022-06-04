@@ -56,14 +56,15 @@
       </div>
     </nav>
   </header>
+
   <main>
     <!--Nuevos Productos-->
     <section class="buttonWhite container-fluid">
-      <div class="jumbotron">
-        <h2>Nueva colección!</h2>
+      <article class="jumbotron">
+        <h2>Nueva colección</h2>
         <p>NUEVOS TONOS DE BASES Y LABIALES</p>
         <a href="./pages/new.html">VER MAS</a>
-      </div>
+      </article>
     </section>
 
     <!--Productos-->
@@ -72,19 +73,19 @@
       <div class="row d-flex justify-content-center">
         <article class="col-lg-3 col-md-3 ">
           <img src="./img/sombras.png" alt="Categoría de productos Sombras">
-          <p>Sombras</p>
+          <h3>Sombras</h3>
           <a href="./pages/sombras.html">VER</a>
         </article>
 
         <article class="col-lg-3 col-md-3">
           <img src="./img/base.png" alt="Categoría de productos Rostro">
-          <p>Rostro</p>
+          <h3>Rostro</h3>
           <a href="./pages/rostro.html">VER</a>
         </article>
 
         <article class="col-lg-3 col-md-3">
           <img src="./img/labial.png" alt="Categoría de productos Labiales">
-          <p>Labiales</p>
+          <h3>Labiales</h3>
           <a href="./pages/labiales.html">VER</a>
         </article>
       </div>
@@ -92,8 +93,8 @@
 
     <!--Información MUNDE-->
     <section>
-      <div class="about_us buttonWhite container-fluid">
-        <h3>Sobre Nosotros!</h3>
+      <article class="about_us buttonWhite container-fluid">
+        <h2>Sobre Nosotros!</h2>
         <p>
           Munde® es una empresa de maquillaje enfocada en estimular la confianza.
         </p>
@@ -107,39 +108,45 @@
         </p>
         <i class="fa-solid fa-recycle"></i>
         <a href="./pages/about_us.html">Conócenos mejor</a>
-      </div>
+      </article>
     </section>
 
     <!--Contacto Form-->
     <section>
       <div class="container contact">
-        <h3>CONTACTANOS</h3>
+        <h2>CONTACTANOS</h2>
         <form action="">
+
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input type="text" name="name" class="form-control" id="email">
+            <input type="text" name="name" class="form-control" id="name">
           </div>
+
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" name="email" class="form-control">
+            <input type="text" name="email" class="form-control" id="email">
           </div>
+
           <div class="form-group">
             <label for="date">Fecha de nacimineto</label>
-            <input type="date" name="date" class="form-control">
+            <input type="date" name="date" class="form-control" id="date">
           </div>
+          
           <div class="form-group">
             <label for="status">Estado Civil</label>
-            <select name="status" class="form-control">
+            <select name="status" class="form-control" id="status">
               <option value="1">Prefiero no decirlo</option>
               <option value="2">Soltero(a)</option>
               <option value="3">Casado(a)</option>
             </select>
           </div>
+
           <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember"> Desea recibir el Newsletter?
+            <label class="form-check-label" for="remember">
+              <input class="form-check-input" type="checkbox" name="remember" id="remember"> Desea recibir el Newsletter?
             </label>
           </div>
+
           <div class="d-flex justify-content-center">
             <button type="submit" class="buttonForm">ENVIAR</button>
           </div>
@@ -165,17 +172,25 @@
 
       <!--Redes sociales -->
       <div class="col-lg-4 col-md-12">
-        <section class="mb-4">
+        <ul class="mb-4 socialmedia">
           <!-- Instagram -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
               class="fa-brands fa-instagram"></i></a>
+          </li>
+
           <!-- Youtube -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
               class="fa-brands fa-youtube"></i></a>
+          </li>
+
           <!-- TikTok -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
               class="fa-brands fa-tiktok"></i></a>
-        </section>
+          </li>
+        </ul>
       </div>
 
       <!--Categorias-->

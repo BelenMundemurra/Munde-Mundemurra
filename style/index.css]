@@ -44,7 +44,6 @@ header h1 {
   font-weight: bold;
   flex-direction: column;
 }
-
 /*Nuevos productos*/
 .jumbotron {
   background-image: url(../img/portada.jpg);
@@ -334,4 +333,4 @@ footer .socialmedia {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css%5D.map */
