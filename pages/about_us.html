@@ -15,20 +15,29 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
   <!--Estilos css-->
-  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!--Logo-->
   <link rel="shortcut icon" href="../img/logo.png">
+  
+  <!--Imports Google Fonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  </style>
 </head>
 
 <body>
   <!--Header + navbar-->
   <header class="container-fluid">
-    <nav class="navbar navbar-expand-md  navbar-light">
-      <h1>MUNDE</h1>
+    <nav class="navbar navbar-expand-md  navbar-dark">
+      <h1>MUNDE COSMETICS</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -74,29 +83,29 @@
       </p>
     </section>
 
-    <section class="row container-fluid marca_info" id="legal">
+    <section class="row container marca_info" id="legal">
       <div>
-        <h2>Identidad de la marca</h2>
-          <p>
-            El concepto de maquillaje hace mención al acto y el resultado de maquillarse o de maquillar: es decir, de
-            apelar a
-            productos cosméticos para cambiar la apariencia o embellecer el rostro u otra parte del cuerpo. También se
-            llama
-            maquillaje a la sustancia que se utiliza para tal fin.
-          </p>
-          <p>
-            El maquillaje es usado por el ser humano para ocultar imperfecciones o resaltar ciertos rasgos. Es habitual
-            que se
-            aplique en los párpados, en los labios y en las mejillas, entre otros lugares.
-          </p>
-          <i class="fa-solid fa-recycle"></i>
+        <h2>IDENTIDAD DE LA MARCA</h2>
+        <p>
+          El concepto de maquillaje hace mención al acto y el resultado de maquillarse o de maquillar: es decir, de
+          apelar a
+          productos cosméticos para cambiar la apariencia o embellecer el rostro u otra parte del cuerpo. También se
+          llama
+          maquillaje a la sustancia que se utiliza para tal fin.
+        </p>
+        <p>
+          El maquillaje es usado por el ser humano para ocultar imperfecciones o resaltar ciertos rasgos. Es habitual
+          que se
+          aplique en los párpados, en los labios y en las mejillas, entre otros lugares.
+        </p>
+        <i class="fa-solid fa-recycle"></i>
       </div>
     </section>
-    
+
     <!--Carousel de imagenes-->
     <section>
       <div id="demo" class="carousel slide carousel_img" data-ride="carousel">
-        <!-- Indicators -->
+        <!-- Indicadores -->
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
@@ -105,7 +114,7 @@
           <li data-target="#demo" data-slide-to="4"></li>
         </ul>
 
-        <!-- The slideshow -->
+        <!-- Imagenes carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../img/oficina.jpg" alt="Imagen de las oficinas de trabajo" width="100%" height="500">
@@ -121,7 +130,7 @@
           </div>
         </div>
 
-        <!-- Left and right controls -->
+        <!-- Controles -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </a>
@@ -150,17 +159,25 @@
 
       <!--Redes sociales -->
       <div class="col-lg-4 col-md-12">
-        <section class="mb-4">
+        <ul class="mb-4 socialmedia">
           <!-- Instagram -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
               class="fa-brands fa-instagram"></i></a>
+          </li>
+
           <!-- Youtube -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
               class="fa-brands fa-youtube"></i></a>
+          </li>
+
           <!-- TikTok -->
-          <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
+          <li>
+            <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
               class="fa-brands fa-tiktok"></i></a>
-        </section>
+          </li>
+        </ul>
       </div>
 
       <!--Categorias-->
@@ -193,4 +210,5 @@
     integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
   </script>
 </body>
+
 </html>

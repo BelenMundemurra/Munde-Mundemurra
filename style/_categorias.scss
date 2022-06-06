@@ -5,9 +5,8 @@ $h3-color_new: rgb(0, 0, 0);
 
 /*Titulo de categoría*/
 .titleCat {
-    text-align: center;
-
     h2 {
+        width: 100%;
         padding: 20px;
         background-image: url(../img/makeup.jpg);
         background-size: cover;
@@ -18,22 +17,21 @@ $h3-color_new: rgb(0, 0, 0);
 
 /*Estilos Productos*/
 .allProducts {
-    display: block;
-
     div {
         display: flex;
         justify-content: center;
-        margin-top: 15px;
     }
-    h3{
-        padding: 10px;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
+    
     article{
         background-color: rgba(184, 174, 174, 0.058);
         margin: 10px;
+        
+        h3{
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
         p {
             font-size: 1rem; 
             color: rgb(72, 70, 70);
@@ -46,17 +44,22 @@ $h3-color_new: rgb(0, 0, 0);
         a:hover {
             background-color: rgb(38, 37, 37);
         }
+
+        img {
+            padding: 15px;
+            height: 300px;
+            width: 250px;
+        }
     } 
-    img {
-        padding: 15px;
-        height: 300px;
-        width: 250px;
-    }
+}
+
+.product_list {
+    margin-top: 15px;
 }
 
 /*Estilo new.html*/
 .titleNewCat {
-    background-image: url(../img/a.jpg);
+    background-image: url(../img/new.jpg);
     background-size: cover;
     box-shadow: 1px 13px 14px -8px rgba(0, 0, 0, 0.294);
 
@@ -80,7 +83,7 @@ $h3-color_new: rgb(0, 0, 0);
 .about_text {
     padding: 50px;
     height: 100%;
-    background-color: rgba(208, 202, 197, 0.537);
+    background-color: rgba(223, 182, 153, 0.537);
 
     p {
         display: block;
@@ -96,8 +99,9 @@ $h3-color_new: rgb(0, 0, 0);
 }
 
 .marca_info {
+    margin: auto;
+    padding: 40px;
     div {
-        padding-top: 20px;
         align-self: center;
         h3 {
             font-family: $fuente-title;
@@ -107,36 +111,54 @@ $h3-color_new: rgb(0, 0, 0);
 
 /* Estilo product_detail.html*/
 .product_detail {
-    height: 70vh;
     text-align: left;
     display: flex;
     padding: 50px;
+    height: auto;
 
     img {
-        width: 50%;
-        height: 70%;
+        width: 700px;
+        height: 700px;
     }
 
     div {
-        padding-left: 40px;
-        font-size: 1rem;
+        padding: 30px;
+
         h4 {
             font-family: $fuente-title; 
+            font-size: 2rem;
+        }
+            
+        p {
+            font-size: 1.3rem;
+        }
+
+        .price {
+            font-weight: bold;
+            padding-top: 20px;
         }
     }
+
 }
 
-@media only screen and (max-width: 780px) {
+/*@media product_detail.html*/
+@media only screen and (max-width: 1240px) {
     .product_detail {
         flex-direction: column;
-        height: 100vh;
         img {
-            width: 100vw;
-            height: 70vh;
+            width: 100%;
+            height: auto;
         }
 
         div {
-            padding: 20px;
+            h4 {
+                font-family: $fuente-title; 
+                font-size: 1.5rem;
+            }
+                
+            p {
+                font-size: 1rem;
+            }
         }
     }
 }

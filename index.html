@@ -14,24 +14,33 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
   <!--Estilos css-->
-  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!--Logo-->
   <link rel="shortcut icon" href="./img/logo.png">
-
-
+  
+  <!--Imports Google Fonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  </style>
 </head>
 
 <body>
   <header class="container-fluid">
-    <nav class="navbar navbar-expand-md  navbar-light">
-      <h1>MUNDE</h1>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <h1>MUNDE COSMETICS</h1>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -62,7 +71,7 @@
     <section class="buttonWhite container-fluid">
       <article class="jumbotron">
         <h2>Nueva colección</h2>
-        <p>NUEVOS TONOS DE BASES Y LABIALES</p>
+        <p>NUEVAS PALETAS DE MAQUILLAJE Y BASES IDEALES PARA VOS</p>
         <a href="./pages/new.html">VER MAS</a>
       </article>
     </section>
@@ -116,7 +125,6 @@
       <div class="container contact">
         <h2>CONTACTANOS</h2>
         <form action="">
-
           <div class="form-group">
             <label for="name">Nombre</label>
             <input type="text" name="name" class="form-control" id="name">
@@ -131,7 +139,7 @@
             <label for="date">Fecha de nacimineto</label>
             <input type="date" name="date" class="form-control" id="date">
           </div>
-          
+
           <div class="form-group">
             <label for="status">Estado Civil</label>
             <select name="status" class="form-control" id="status">
@@ -143,18 +151,20 @@
 
           <div class="form-group form-check">
             <label class="form-check-label" for="remember">
-              <input class="form-check-input" type="checkbox" name="remember" id="remember"> Desea recibir el Newsletter?
+              <input class="form-check-input" type="checkbox" name="remember" id="remember"> Desea recibir el
+              Newsletter?
             </label>
           </div>
 
           <div class="d-flex justify-content-center">
             <button type="submit" class="buttonForm">ENVIAR</button>
           </div>
-
+          
         </form>
       </div>
     </section>
   </main>
+  
   <!-- Footer -->
   <footer class="text-center text-white">
     <div class="container p-4 row">
@@ -176,19 +186,19 @@
           <!-- Instagram -->
           <li>
             <a target="_blank" class="btn btn-floating m-1" href="https://www.instagram.com"><i
-              class="fa-brands fa-instagram"></i></a>
+                class="fa-brands fa-instagram"></i></a>
           </li>
 
           <!-- Youtube -->
           <li>
             <a target="_blank" class="btn btn-floating m-1" href="https://www.youtube.com"><i
-              class="fa-brands fa-youtube"></i></a>
+                class="fa-brands fa-youtube"></i></a>
           </li>
 
           <!-- TikTok -->
           <li>
             <a target="_blank" class="btn btn-floating m-1" href="https://www.tiktok.com"><i
-              class="fa-brands fa-tiktok"></i></a>
+                class="fa-brands fa-tiktok"></i></a>
           </li>
         </ul>
       </div>
